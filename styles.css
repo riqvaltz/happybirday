@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fce4ec;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#startButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #f50057;
+}
+
+#birthdayMessage h1 {
+    color: #d81b60;
+    font-size: 40px;
+}
+
+.cake {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.balloons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.balloon {
+    width: 100px;
+    height: 150px;
+    background-color: #ff4081;
+    border-radius: 50%;
+    margin: 0 10px;
+    position: relative;
+    animation: float 3s infinite ease-in-out;
+}
+
+.balloon::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 2px;
+    height: 50px;
+    background-color: #ff4081;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+#showMessageButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#showMessageButton:hover {
+    background-color: #f50057;
+}
+
+
+#specialMessage {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
